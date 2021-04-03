@@ -14,6 +14,19 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+.text-datos{
+	font-size: 1.2em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.cancelar-pago{
+	padding: 9px;
+	margin: 2px;
+	background-color: #705ee3;
+	color: white;
+	border: 2px solid #3498db;
+	border-radius: 5px;
+  }
 
 .contenedor {
 	width: 100%;
@@ -41,7 +54,6 @@ a {
 
 .menu li a:hover{
 	background: #a2a4ef;
-	transition: all .3s;
 }
 
 /* Submenu*/
@@ -53,7 +65,6 @@ a {
 	right: 1%;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 1.5s;
 	list-style: none;
 	border-radius: 4px;
 	border: 1px solid rgb(223, 223, 223);
@@ -125,15 +136,15 @@ a {
 	top: 2px;
 }
 
-.header .barra-busqueda {
+.main .barra-busqueda {
 	grid-area: busqueda;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
+	padding: 1%;
 }
 
-.header .barra-busqueda input {
-	min-width: 60%;
+.main .barra-busqueda input {
+	min-width: 30%;
 	padding: 0 15px;
 	height: 35px;
 	line-height: 35px;
@@ -142,18 +153,18 @@ a {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.header .barra-busqueda button {
+.main .barra-busqueda button {
 	height: 35px;
 	border: 1px solid #ccc;
 	border-left: none;
-	color: #545454;
-	background: #f8f8f8;
+	color: #e5e5e5;
+	background: #705ee3;
 	padding: 0 25px;
 	cursor: pointer;
 }
 
-.header .barra-busqueda button:hover {
-	background: #f5f5f5;
+.main .barra-busqueda button:hover {
+	background: #a2a4ef;
 }
 
 .header .botones-header {
@@ -261,18 +272,24 @@ a {
 .main .grid-videos {
 	display: grid;
 	grid-gap: 40px 20px;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .main .grid-videos .video {
-	width: 100%;
+	width: 95%;
 	display: block;
+	padding: 9%;
+	border: 3px solid #B4C4F7;
+	border-radius: 12px;
 }
 
-.main .grid-videos .video img {
-	width: 100%;
+.main .grid-videos .video .button-panel{
+	color: white;
+	text-align: center;
 }
-
+.main .grid-videos .video .button-panel h3{
+	padding: 8%;
+}
 /* ---- ---- ---- Mediaqueries ---- ---- ---- */
 @media screen and (max-width: 1200px) {
 	.main .grid-videos {

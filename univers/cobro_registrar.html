@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Dashboard</title>
+	<title>Pagos</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/forms-style.css">
 </head>
 <body>
 	<div class="contenedor active" id="contenedor">
@@ -15,11 +16,6 @@
 				<button id="boton-menu" class="boton-menu"><i style="color: white;" class="fas fa-bars fa-2x"></i></button>
 				<a href="#" class="logo"><img class="logo-menu" src="../img/Angeles.png" alt=""></a>
 			</div>
-
-			<!-- <div class="barra-busqueda">
-				<input type="text" placeholder="Buscar">
-				<button type="submit"><i class="fas fa-search"></i></button>
-			</div> -->
 
 			<div class="botones-header">
 				<p class="name-user">Nombre User</p>
@@ -49,27 +45,64 @@
 		</nav>
 
 		<main class="main">
-			<h3 class="titulo">Panel De Control</h3>
+			<h1 class="titulo">Pago</h1>
 			<hr>
-			<div class="grid-videos">
-				<a href="" class="video">
-					<div class="button-panel">
-						<div><i style="color: white;" class="fas fa-user fa-7x"></i></i></div>
-						<h3>Estudiantes</h3>
+			<a class="cancelar-pago" href="reportes.html">Cancelar</a>
+			<div class="container">
+				<form action="#">
+					<div class="form-row">
+						<div class="input-data">
+							<input type="text" disabled value="Matricula">
+							<div class="underline">
+							</div>
+							<label for="">Matricula</label>
+						</div>
+						<div class="input-data">
+							<input type="text" disabled value="Nombre">
+							<label for="">Nombre</label>
+						</div>
 					</div>
-				</a>
-				<a href="" class="video">
-					<div class="button-panel">
-						<div><i style="color: white;" class="fas fa-dollar-sign fa-7x"></i></i></div>
-						<h3>Pagos</h3>
+				<div class="form-row">
+					<div class="input-data">
+						<input type="text" disabled value="Incripcion">
+						<div class="underline">
+							
+						</div>
+						<label for="">Pago</label>
 					</div>
-				</a>
-				<a href="" class="video">
-					<div class="button-panel">
-						<div><i style="color: white;" class="fas fa-clipboard-list fa-7x"></i></i></div>
-						<h3>Reporte</h3>
+					<div class="input-data">
+						<input type="text" disabled value="Total a Pagar">
+						<div class="underline">
+							
+						</div>
+						<label for="">Total a Pagar</label>
 					</div>
-				</a>
+				</div>
+				<div class="form-row">
+					<div class="input-data">
+						<input type="text" disabled value="Adeudo">
+						<div class="underline">
+							
+						</div>
+						<label for="">Adeudo</label>
+					</div>
+					<div class="input-data">
+						<input type="text" required>
+						<div class="underline">
+							
+						</div>
+						<label for="">Monto a Pagar</label>
+					</div>
+				</div>
+				
+					  <div class="form-row submit-btn">	
+						  <div class="input-data">
+							  <div class="inner"></div>
+							  <input type="submit" value="Guardar">
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</main>
 	</div>

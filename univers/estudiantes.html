@@ -7,6 +7,7 @@
 	<title>Estudiantes</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
 	<div class="contenedor active" id="contenedor">
@@ -49,20 +50,81 @@
 		</nav>
 
 		<main class="main">
-			<h3 class="titulo">Estudiantes</h3>
-			<div class="grid-videos">
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+			<h1 class="titulo">Estudiantes</h1>
+			<hr>
+			<h2 class="titulo">Administrar Informacion De Los Estudiantes</h2>
+			<a class="cancelar-pago" href="estudiantes_regist.html">Agregar Estudiante <i class="fas fa-user-plus"></i></a>
+
+			<div class="contenedor-table">
+			<div class="barra-busqueda">
+				<input type="text" placeholder="Buscar">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</div>
+
+				<table border="1">
+					<thead class="encabezado-table">
+						<tr>
+							<th>No.</th>
+							<th>Nombre</th>
+							<th>Carrera</th>
+							<th>Perfil</th>
+							<th>Grado</th>
+							<th>Grupo</th>
+							<th>Registrar Pago</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-label="No.:" >1</td>
+							<td data-label="Nombre:" >Nombre A</td>
+							<td data-label="Carrera:" >Carrera A</td>
+							<td data-label="Perfil:" >
+								<a href="perfil_alumno.html" style="color: white;">
+									Perfil
+									<i class="fas fa-user fa-lg"></i>
+								</a>
+							</td>
+							<td data-label="Grado:" >Grado A</td>
+							<td data-label="Grupo:" >Grupo A</td>
+							<td data-label="Registrar Pago:" >
+								<a href="pagos_registrar.html" style="color: white;">
+									Nuevo Pago
+									<i class="fas fa-file-invoice-dollar fa-lg"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td data-label="No." >2</td>
+							<td data-label="Nombre" >Nombre B</td>
+							<td data-label="Carrera" >Carrera B</td>
+							<td data-label="Parcial" >Parcial B</td>
+							<td data-label="Grado" >Grado B</td>
+							<td data-label="Grupo" >Grupo B</td>
+							<td data-label="Registrar Pago" >
+								<a href="pagos_registrar.html" style="color: white;">
+									Nuevo Pago
+									<i class="fas fa-file-invoice-dollar fa-lg"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td data-label="No." >3</td>
+							<td data-label="Nombre" >Nombre C</td>
+							<td data-label="Carrera" >Carrera C</td>
+							<td data-label="Parcial" >Parcial C</td>
+							<td data-label="Grado" >Grado C</td>
+							<td data-label="Grupo" >Grupo C</td>
+							<td data-label="Registrar Pago" >
+								<a href="pagos_registrar.html" style="color: white;">
+									Nuevo Pago
+									<i class="fas fa-file-invoice-dollar fa-lg"></i>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+
 			</div>
 		</main>
 	</div>

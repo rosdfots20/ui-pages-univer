@@ -7,6 +7,7 @@
 	<title>Pagos</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
 	<div class="contenedor active" id="contenedor">
@@ -15,11 +16,6 @@
 				<button id="boton-menu" class="boton-menu"><i style="color: white;" class="fas fa-bars fa-2x"></i></button>
 				<a href="#" class="logo"><img class="logo-menu" src="../img/Angeles.png" alt=""></a>
 			</div>
-
-			<!-- <div class="barra-busqueda">
-				<input type="text" placeholder="Buscar">
-				<button type="submit"><i class="fas fa-search"></i></button>
-			</div> -->
 
 			<div class="botones-header">
 				<p class="name-user">Nombre User</p>
@@ -51,20 +47,58 @@
 		<main class="main">
 			<h3 class="titulo">Pagos</h3>
 			<hr>
-			<div class="grid-videos">
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-			</div>
+			<div class="contenedor-table">
+				<div class="barra-busqueda">
+					<input type="text" placeholder="Buscar">
+					<button type="submit"><i class="fas fa-search"></i></button>
+				</div>
+	
+					<table border="1">
+						<thead class="encabezado-table">
+							<tr>
+								<th>Nombre</th>
+								<th>Nombre Pago</th>
+								<th>Fecha pago</th>
+								<th>Cuota</th>
+								<th>Balance</th>
+								<th>Acción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-label="Nombre" >Nombre A</td>
+								<td data-label="Nombre Pago" >Nombre Pago A</td>
+								<td data-label="Fecha pago" >Fecha pago A</td>
+								<td data-label="Cuota" >Cuota A</td>
+								<td data-label="Balance" >Balance</td>
+								<td data-label="Acción" >
+									<a href="pagos_detalle.html" style="color: white;">
+										Detalle Pago
+										<i class="fas fa-file-invoice fa-lg"></i>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-label="Nombre" >Nombre B</td>
+								<td data-label="Nombre Pago" >Nombre Pago B</td>
+								<td data-label="Fecha pago" >Fecha pago B</td>
+								<td data-label="Cuota" >Cuota B</td>
+								<td data-label="Balance" >Balance</td>
+								<td data-label="Acción" >Detalle Pago</td>
+							</tr>
+							<tr>
+								<td data-label="Nombre" >Nombre C</td>
+								<td data-label="Nombre Pago" >Nombre Pago C</td>
+								<td data-label="Fecha pago" >Fecha pago C</td>
+								<td data-label="Cuota" >Cuota C</td>
+								<td data-label="Balance" >Balance</td>
+								<td data-label="Acción" >Detalle Pago</td>
+							</tr>
+						</tbody>
+						
+					</table>
+	
+				</div>
 		</main>
 	</div>
 	

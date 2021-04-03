@@ -7,6 +7,7 @@
 	<title>Reportes</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
 	<div class="contenedor active" id="contenedor">
@@ -15,11 +16,6 @@
 				<button id="boton-menu" class="boton-menu"><i style="color: white;" class="fas fa-bars fa-2x"></i></button>
 				<a href="#" class="logo"><img class="logo-menu" src="../img/Angeles.png" alt=""></a>
 			</div>
-
-			<!-- <div class="barra-busqueda">
-				<input type="text" placeholder="Buscar">
-				<button type="submit"><i class="fas fa-search"></i></button>
-			</div> -->
 
 			<div class="botones-header">
 				<p class="name-user">Nombre User</p>
@@ -51,20 +47,62 @@
 		<main class="main">
 			<h3 class="titulo">Reportes</h3>
 			<hr>
-			<div class="grid-videos">
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-			</div>
+			<div class="contenedor-table">
+				<div class="barra-busqueda">
+					<input type="text" placeholder="Buscar">
+					<button type="submit"><i class="fas fa-search"></i></button>
+				</div>
+	
+					<table border="1">
+						<thead class="encabezado-table">
+							<tr>
+								<th>Nombre</th>
+								<th>Grado</th>
+								<th>Carrera</th>
+								<th>Parcial</th>
+								<th>Monto Adeudo</th>
+								<th>Limite</th>
+								<th>Realizar Cobro</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-label="Nombre:" >Nombre A</td>
+								<td data-label="Grado:" >Grado A</td>
+								<td data-label="Carrera:" >Carrera A</td>
+								<td data-label="Parcial:" >Parcial A</td>
+								<td data-label="Monto Adeudo:" >Monto Adeudo</td>
+								<td data-label="Limite" >Fecha</td>
+								<td data-label="Realizar Cobro:" >
+									<a href="cobro_registrar.html" style="color: white;">
+										Cobrar
+										<i class="fas fa-file-invoice-dollar fa-lg"></i>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-label="Nombre" >Nombre B</td>
+								<td data-label="Grado" >Grado B</td>
+								<td data-label="Carrera" >Carrera B</td>
+								<td data-label="Parcial" >Parcial B</td>
+								<td data-label="Monto Adeudo" >Monto Adeudo</td>
+								<td data-label="Ver Perfil" >Perfil B</td>
+								<td data-label="Realizar Cobro" >Cobro 2</td>
+							</tr>
+							<tr>
+								<td data-label="Nombre" >Nombre C</td>
+								<td data-label="Grado" >Grado C</td>
+								<td data-label="Carrera" >Carrera C</td>
+								<td data-label="Parcial" >Parcial C</td>
+								<td data-label="Monto Adeudo" >Monto Adeudo</td>
+								<td data-label="Ver Perfil" >Perfil C</td>
+								<td data-label="Realizar Cobro" >Cobro 3</td>
+							</tr>
+						</tbody>
+						
+					</table>
+	
+				</div>
 		</main>
 	</div>
 	
